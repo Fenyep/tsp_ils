@@ -39,3 +39,41 @@
 
 
 ## implementation of the Iterative Local Search Algorithm to the Travelling Salesman Problem
+
+### How to launch the code ?
+
+#### Requirements
+
+- pip
+
+if virtualenv is not installed install it like this:
+
+```
+pip install virtualenv
+```
+
+
+#### Create a virtual environment
+
+`virtualenv venv`
+
+
+#### Activate the virtual environment
+
+`source venv/bin/activate`
+
+
+#### Install dependencies
+
+`pip install -r requirements.txt`
+
+
+#### Run the python file
+
+For this you need to use the tsp instance bier127.tsp
+
+`python tsp_ils.py bier127.tsp`
+
+with python3:
+
+`python3 tsp_ils.py bier127.tsp`
