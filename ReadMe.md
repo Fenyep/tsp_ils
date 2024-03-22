@@ -9,9 +9,9 @@
 1. s0 = GenerateInitialSolution()
 2. s* = LocalSearch(s0)
 3. **repeat**
-4. .    s' = Pertubations(s*, history)
-5. .    s*' = LocalSearch(s')
-6. .    s* = AcceptanceCriterion(s*, s*', history)
+4. .... s' = Pertubations(s*, history)
+5. .... s*' = LocalSearch(s')
+6. .... s* = AcceptanceCriterion(s*, s*', history)
 7. **until** termination condition or maxIt met
 8. **return** s*
 
@@ -26,14 +26,14 @@
 2. s* = random_permutation(cities)
 3. *// Perform localsearch on the subproblem of finding the shortest path between two adjacent cities*
 4. **repeat**
-5. .     *// Perturb the solution by swapping two cities*
-6. .     s' = Pertubation(s*)
-7. .     *// Evaluate the fitness of the pertubed solution with the current solution*
-8. .     fitness = evaluate_fitness(s')
-9. .     *// Compare the fitness of the perturbed solution with the current solution*
-10. .     if fitness < evaluate_fitness(s*):
-11. .         // Accept the pertubed solution as the new best solution
-12. .         s* = s'
+5. .... *// Perturb the solution by swapping two cities*
+6. .... s' = Pertubation(s*)
+7. .... *// Evaluate the fitness of the pertubed solution with the current solution*
+8. .... fitness = evaluate_fitness(s')
+9. .... *// Compare the fitness of the perturbed solution with the current solution*
+10. .... if fitness < evaluate_fitness(s*):
+11. ........ // Accept the pertubed solution as the new best solution
+12. ........ s* = s'
 13. **until** termination condition or maxIt
 14. **return** s*
 
